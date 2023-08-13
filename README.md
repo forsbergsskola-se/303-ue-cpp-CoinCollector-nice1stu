@@ -41,7 +41,7 @@ Link to the Youtube Video
 [![click to watch the video](https://img.youtube.com/vi/6F6m0BA9bww/maxresdefault.jpg)](https://youtu.be/6F6m0BA9bww)  
 
 Link to the GitHub Repository:  
-(https://github.com/forsbergsskola-se/303-ue-cpp-CoinCollector-nice1stu/tree/main)
+https://github.com/forsbergsskola-se/303-ue-cpp-CoinCollector-nice1stu/tree/main
 
 Mission Accomplished !
 ![Jump4Joy](https://github.com/forsbergsskola-se/302-specialization-track-nice1stu/assets/112468923/f656ab3b-85b6-4b76-8e86-abfb52e2e076)
