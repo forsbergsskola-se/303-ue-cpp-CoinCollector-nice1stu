@@ -1,16 +1,29 @@
-# 303-ue-cpp-CoinCollector-nice1stu
-Unreal Engine 5.2 C++ exercise creating game mechanics in C++ to spawn actors and add interactor component for actor interaction
+Coin Collector  
 
-Following on from the initial 1st iteration of the Unreal Engine 5.2 3rd person game, have undertaken to implement simple animations to the game using Blueprints.  
+Requirements:
+Unreal Engine 5.2 C++ exercise creating game mechanics in C++ to spawn actors and add interactor component for actor interaction  
 
-Requiremnents: Animation  
-Dive deeper into the world of character movement and animation. Implement unique animations using the animation blueprint. You will be assessed on the fluidity, creativity, and technical implementation of your animations.  
-  
-G (Pass): Create an animation sequence for a character or object using Unreal's Animation Blueprint. Your animation should transition smoothly between states in the State Machine, and use Blend Spaces for blending animations based on variables.  
-  
-VG (Distinction): Your animation should demonstrate interaction with the environment or another character, e.g. by using Animation Montages.  
+The Spawner
 
-Let's Go (again) !  
+Create an AActor class that will be your spawning actor—use a cube or other primitive component to make it visible.
+Make a manager object. Classes that can be used for this include AInfo, UWorldSubsystem, and AGameMode, with varied requirements between the three.
+Create a publicly accessible method in the manager object called “Spawn” that takes a FVector as a parameter.
+In the manager object, create a private TArray that stores pointers to your spawned object class.
+Create an AActor class that will be your spawn point object.
+In the spawn point, add a public floating point variable that is the radius of the spawning area.
+In the spawn point, add a public integer variable that is the number of spawns that should happen.
+Use DrawDebugHelpers to draw a debug circle or sphere on Tick, to visualize where the spawning area is.
+In OnBeginPlay, trigger the manager object’s Spawn method at random locations inside the radius the specified number of times.
+In the Spawn method in the manager, use SpawnActor or other gameplay function to create a new actor and add it to the TArray of actors each time the Spawn method is called, then move the newly spawned actor to the supplied Location.
+
+The Interactor
+
+Create an ActorComponent that will collect potential interactive objects. Add this to your player.
+Create an Interface that has a single method that allows you to interact with any Actor that implements it.
+Create an AActor that implements the Interface and add it to the world. (Or add the interface to the spawned AActor from the previous exercise.)
+Make the ActorComponent collect possible targets in its TickComponent method. Possible alternatives are using an Overlap (such as GetWorld()->OverlapMultiByChannel) or getting the TArray of actors from the manager object in the previous exercise. You could also use a LineTrace from the player’s camera. Consider the benefits of each method before you implement one. For example, can an AI make use of the LineTrace variant?
+Pick the most relevant of the collected possible targets and safely call the interface on that target.
+Implement the same interface on a Blueprint actor.
   
 ![LetsGo](https://github.com/forsbergsskola-se/302-specialization-track-nice1stu/assets/112468923/5bd56274-5723-4bb9-b0f0-a082af2e09c7)
 
