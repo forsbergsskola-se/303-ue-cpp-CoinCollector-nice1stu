@@ -48,5 +48,7 @@ Note: Attempted to add as a special feature of a procedurally generated mesh maz
 I added screen messages displaying the locations of the random point location and the random spawn locations as a way to find out exactly where the process breaks down. As seen in the video below, the function to randomly select tile locations is working properly as indicated by the red flashing tiles, but then those locations are no passed correctly to the random point selector and of course not then passed to the spawner to spawn the coins. This is the next hurdle to overcome in completing the game.
 
 ![RandomandSpawnLocationDebug](https://github.com/forsbergsskola-se/303-ue-cpp-CoinCollector-nice1stu/assets/112468923/7e1df64d-326d-43ab-84fb-ee499a921ed2)
-  
+
+Link to the Youtube Video  
+
 [![click to watch the video](https://img.youtube.com/vi/mK2tKtBJoYs/maxresdefault.jpg)](https://youtu.be/mK2tKtBJoYs)
