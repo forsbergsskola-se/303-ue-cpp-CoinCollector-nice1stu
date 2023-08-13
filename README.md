@@ -24,7 +24,9 @@ Create an AActor that implements the Interface and add it to the world. (Or add 
 Make the ActorComponent collect possible targets in its TickComponent method. Possible alternatives are using an Overlap (such as GetWorld()->OverlapMultiByChannel) or getting the TArray of actors from the manager object in the previous exercise. You could also use a LineTrace from the player’s camera. Consider the benefits of each method before you implement one. For example, can an AI make use of the LineTrace variant?
 Pick the most relevant of the collected possible targets and safely call the interface on that target.
 Implement the same interface on a Blueprint actor.
-  
+
+![303SpawnCoins](https://github.com/forsbergsskola-se/303-ue-cpp-CoinCollector-nice1stu/assets/112468923/c6f3ccbb-35b7-41ba-81a4-bb686205657f)
+
 ![LetsGo](https://github.com/forsbergsskola-se/302-specialization-track-nice1stu/assets/112468923/5bd56274-5723-4bb9-b0f0-a082af2e09c7)
 
 Using pre-rigged character and animations downloaded from Mixamo, replaced the Unreal Manniquin with new mesh. Then created Animation Blueprint to enable character to switch between animations.  
