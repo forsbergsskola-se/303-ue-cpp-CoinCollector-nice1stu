@@ -33,7 +33,7 @@ There was a big issue with the way the classes were constructed where the coins 
   
 ![303Interactor](https://github.com/forsbergsskola-se/303-ue-cpp-CoinCollector-nice1stu/assets/112468923/dd8025e9-5d71-4204-ae53-2a197fe429c4)
 
-
+With coins now spawning correctly in scene, progressed to allow the player to interact with the coins. An interactor component was created and added to the Player Actor to allow actions to happen when player comes into contact with other objects, in this case the coin. An instance of FCollisionShape is added to the player which determined the range at which the player can interact with an object. A debug sphere (green) is drawn to indicate the range at which the player can interact with any object it comes into contact with. With that working, created the PickUp interface to allow the player to pick up (destroy coin) on contact with the interactor. Of course with the interactor component, any other even interface can be implemented at a later stage if needed. To initially test the interface was functioning correctly a debug message is printed each time the pickup occured. In this case the celebratory "Woohoo, used the interface !" is displayed. With tha now functioning created the actual functions upon interaction with the player, which included adding 1 to the points score for each coin collected, and destroying the coin. Note: This was subsequently changed by design to move the coin using the MoveComponent rather then destroying the coin, thus keeping a constant number of coins in game, rather then reducing the amount of coins to 0 in gameplay, ensuring continuous gameplay. 
 
 Made use of BlendSpace to enable smoother transition between Idle <-> Walk <-> Run.  
 
