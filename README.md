@@ -46,7 +46,7 @@ Also created a short clip of a blend of anaimations using Anim Montage set to pl
 Plus: Did add simple sfx on statue collected and background music.  
 
 Link to the Youtube Video  
-[![click to watch the video](https://img.youtube.com/vi/9S8uEFoUkgI/maxresdefault.jpg)](https://youtu.be/9S8uEFoUkgI)  
+[![click to watch the video](https://img.youtube.com/vi/6F6m0BA9bww/maxresdefault.jpg)](https://youtu.be/6F6m0BA9bww)  
 
 Link to the GitHub Repository:  
 https://github.com/forsbergsskola-se/302-specialization-track-nice1stu  
