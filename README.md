@@ -43,5 +43,4 @@ Link to the Youtube Video
 Link to the GitHub Repository:  
 https://github.com/forsbergsskola-se/303-ue-cpp-CoinCollector-nice1stu/tree/main
 
-Mission Accomplished !
-![Jump4Joy](https://github.com/forsbergsskola-se/302-specialization-track-nice1stu/assets/112468923/f656ab3b-85b6-4b76-8e86-abfb52e2e076)
+Note: Attempted to add as a special feature of a procedurally generated mesh maze to the assignment. the goal was to have a procedurally generated maze at each gamestart, and have a number of coins randomly spawn within the maze and a time limit for the player to navigate the maze to collect all the coins before time ran out. Unfortunately was not able to get it to function as intended before the deadline of the assignment. Currently having problems with the coins all spawning in the same location, the spawn point, which indicates the random tile location generator which was suppose to pass the locations to the spawn point is not working properly. However, despite this setback and the passing of the deadline, will continue to work on this to see that project completed, with randomly placed coins insdie the maze, the player being randomly placed in the maze also, a timer counting down the time.
