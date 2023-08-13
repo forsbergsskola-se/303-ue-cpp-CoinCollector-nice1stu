@@ -29,6 +29,8 @@ Implement the same interface on a Blueprint actor.
 
 Following on from the initial exercises to create class in C++, and adding components (in this case rotator) to the actor, I progresses then to create a way to spawn the statues (in my case coins) into the scene. This is managed by creating an AInfo class called StatueManager which manages the instantiating of statue actors in the scene. The statueManager class creates the array that stores the all the instances of the coins that are spawned in the scene. In the GameMode class we create an instance of the StatueManager to use it in game. Then we create a SpawnPoint actor which is in the scene. This controls the location at which the statues are spawned in the scene. By making the Location of the SpawnPoint and SpawnRadius we can adjust this in the Unreal Editor directly to affect where and how far statues are spawned in scene.
   
+![303Interactor](https://github.com/forsbergsskola-se/303-ue-cpp-CoinCollector-nice1stu/assets/112468923/dd8025e9-5d71-4204-ae53-2a197fe429c4)
+
 ![BP_Locomotion](https://github.com/forsbergsskola-se/302-specialization-track-nice1stu/assets/112468923/32a5a7c6-ca1a-4b96-b34d-9644cfd5c332)  
 
 Made use of BlendSpace to enable smoother transition between Idle <-> Walk <-> Run.  
